@@ -52,3 +52,4 @@ class Deck:
                 self.all_cards.append(created_card)
     def shuffle(self):
         print("halo")
+        print("halo")
