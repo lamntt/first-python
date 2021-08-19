@@ -50,4 +50,5 @@ class Deck:
             for rank in ranks:
                 created_card = Card(suit,rank)
                 self.all_cards.append(created_card)
-    def s
+    def shuffle(self):
+        print("halo")
