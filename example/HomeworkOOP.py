@@ -1,4 +1,4 @@
-## 1
+# # 1
 # import math
 
 
@@ -22,7 +22,7 @@
 # print(li.slope())
 
 
-##2
+# #2
 # pi = 3.141592653589793
 
 
@@ -42,18 +42,21 @@
 # print(cy.surface_area())
 
 
-##3 Gain product
+# 3 Gain product
 # class Account:
 #     product = []
 
 #     def __init__(self, username, password):
 #         self.username = username
 #         self.password = password
+#         self.isLogin = False
 
 #     def login(self, username, password):
 #         if self.username == username and self.password == password:
 #             print("Login successfully")
+#             self.isLogin = True
 #         else:
+#             self.isLogin = False
 #             print("Login failed")
 
 #     def add_to_cart(self, product):
@@ -64,14 +67,13 @@
 
 
 # ac1 = Account("giang", 123)
-
 # ac1.login("giang", 123)
+# if ac1.isLogin:
+#     ac1.add_to_cart("skin product")
+#     ac1.get_cart()
 
-# ac1.add_to_cart("skin product")
-# ac1.get_cart()
 
-
-## Challenge
+# Challenge
 class Account:
     def __init__(self, owner, balance):
         self.owner = owner
@@ -87,7 +89,7 @@ class Account:
     def withdraw(self, money):
         if money > self.balance:
             print("Your balance is not enough")
-        if money < self.balance:
+        if money <= self.balance:
             self.balance -= money
             print(f"Withdraw accepted. Your currently balance is {self.balance}")
 
@@ -95,4 +97,4 @@ class Account:
 ac = Account("Jennie", 100)
 print(ac)
 ac.deposit(50)
-ac.withdraw(100)
+ac.withdraw(150)

@@ -112,7 +112,7 @@ while True:
         print("game replay")
         print(turn)
         if turn == 1:
-            print("Player 1 will")
+            # print("Player 1 will")
             display_board(test_board)
             position = player_choice(test_board)
             # free_position = space_check(test_board,player1_position)
@@ -124,17 +124,17 @@ while True:
                 display_board(test_board)
                 game_on = False
             else:
-                print("Player 1 is")
+                # print("Player 1 is")
                 if full_board_check(test_board):
                     display_board(test_board)
                     print("Gmae is full draw!")
                     break
                 else:
-                    print("Player 1 turn")
+                    # print("Player 1 turn")
                     turn = 2
 
         else:
-            print("Player 2 will")
+            # print("Player 2 will")
             display_board(test_board)
             position = player_choice(test_board)
             # free_position = space_check(test_board,player1_position)
@@ -146,13 +146,13 @@ while True:
                 display_board(test_board)
                 game_on = False
             else:
-                print("Player 2 is")
+                # print("Player 2 is")
                 if full_board_check(test_board):
                     display_board(test_board)
                     print("Gmae is full draw!")
                     break
                 else:
-                    print("Player 2 turn")
+                    # print("Player 2 turn")
                     turn = 1
 
     if not replay():
