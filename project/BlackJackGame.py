@@ -122,13 +122,14 @@ def take_bet(chips):
             else:
                 break
 
-chip = Chips()
-take_bet(chip)
-print(chip.bet)
+# chip = Chips()
+# take_bet(chip)
+# print(chip.bet)
 
 
 
-
+def hit(deck,hand):
+    
 
 
 
