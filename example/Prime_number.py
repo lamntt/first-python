@@ -10,4 +10,4 @@ def count_primes(num):
     if flag == True:
       arr.append(nums)
   return len(arr)
-print(count_primes(100))
+print(count_primes(1000))
