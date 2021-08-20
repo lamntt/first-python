@@ -373,9 +373,19 @@
 
 
 
+# for i in range(0,5):
+#     result=""
+#     for j in range(0,i):
+#         result+="*"
+#     print(result)
 
+def loop(var):
+    print(var)
+    if var==0:
+        return;
+    loop(var-1)
 
-
+loop(10)
 
 
 
